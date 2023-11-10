@@ -28,11 +28,11 @@ jobs:
         echo "FIN del login"
     - name: Build Docker Image
       run: |
-        ocker build -t jlsevillano78/docker-graphql:0.0.2 .
+        docker build -t jlsevillano78/docker-graphql:0.0.2 .
 
     - name: Push Docker Image
       run: |
-        ocker push jlsevillano78/docker-graphql:0.0.2 .
+        docker push jlsevillano78/docker-graphql:0.0.2 .
     
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
